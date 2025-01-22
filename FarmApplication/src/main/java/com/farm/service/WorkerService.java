@@ -1,4 +1,4 @@
-package service;
+package com.farm.service;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,9 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.farm.repository.WorkerRepository;
 import com.model.person.Worker;
-
-import JpaRepository.WorkerRepository;
 
 @Service
 
