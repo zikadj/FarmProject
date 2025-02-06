@@ -1,4 +1,4 @@
-package com.dao.person;
+package com.farm.entity;
 
 import java.sql.Connection;
 
@@ -6,11 +6,11 @@ import java.sql.PreparedStatement;
 
 import com.model.person.Worker;
 
-public class WorkerDAO {
+public class WorkerEntity {
 
 	private Connection conn;
 
-	public WorkerDAO(Connection conn) {
+	public WorkerEntity(Connection conn) {
 		super();
 		this.conn = conn;
 	}

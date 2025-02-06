@@ -1,4 +1,4 @@
-package com.dao.person;
+package com.farm.entity;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -6,12 +6,12 @@ import java.sql.PreparedStatement;
 import com.model.person.Address;
 import com.model.person.Owner;
 
-public class OwnerDAO {
+public class OwnerEntity {
 
 	private Connection Conn;
 	private Address address;
 
-	public OwnerDAO(Connection conn) {
+	public OwnerEntity(Connection conn) {
 		super();
 		Conn = conn;
 	}

@@ -1,4 +1,4 @@
-package com.farm.FarmApplication.entity;
+package com.farm.entity;
 
 
 import jakarta.persistence.Column;
@@ -10,7 +10,7 @@ import jakarta.persistence.Table;
 @Entity
 
 
-public class Employee {
+public class EmployeeEntity {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -22,11 +22,11 @@ public class Employee {
 	private String designation;
 	private Double selary = Math.random()*100000;
 	
-	public Employee() {
+	public EmployeeEntity() {
 		super();
 	}
 
-	public Employee(Long empId, String name, Integer age, Long phoneNumber, String designation, Double selary) {
+	public EmployeeEntity(Long empId, String name, Integer age, Long phoneNumber, String designation, Double selary) {
 		super();
 		this.empId = empId;
 		this.name = name;
